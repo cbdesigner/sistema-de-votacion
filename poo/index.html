@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POO</title>
+  </head>
+  <body>
+    <section>
+      <h3>CREAR ENCUESTA</h3>
+      <label for="fsurvey">Nombre de la encuesta:</label><br />
+      <input type="text" id="fsurvey" name="fsurvey" /><br />
+      <button id="newSurvey">Agregar encuesta</button>
+    </section>
+    <section>
+      <h3>Agregar preguntas</h3>
+      <label for="surveySelect1"
+        >Seleccione la encuesta a agregar preguntas</label
+      >
+      <select
+        name="surveySelect1"
+        id="surveySelect1"
+        class="surveySelector"
+      ></select>
+      <br />
+      <br />
+      <label for="fquestion">Escriba la pregunta a realizar</label><br />
+      <input type="text" id="fquestion" name="fquestion" />
+      <br /><br />
+      <label for="foption">Agregue posibles respuestas</label><br />
+      <input type="text" id="foption" name="foption" />
+      <button id="newOption">Agregar opción a la encuesta</button>
+      <br />
+      <h5>Opciones</h5>
+      <div id="temporalOptions"></div>
+      <br />
+      <button id="addQuestion">Agregar pregunta a la encuesta</button><br />
+    </section>
+    <section>
+      <h3>Responder encuesta</h3>
+      <label for="surveySelect2">Seleccione la encuesta a responder</label>
+      <select
+        name="surveySelect2"
+        id="surveySelect2"
+        class="surveySelector"
+      ></select>
+      <br />
+      <br />
+      <div id="questionsBySurvey"></div>
+      <button id="responseSurvey">Responder</button>
+    </section>
+    <section>
+      <h3>Respuestas</h3>
+      <div id="responseSurveyFieldset"></div>
+    </section>
+  </body>
+</html>
